@@ -30,15 +30,12 @@ Le schéma et la table seront créés automatiquement si ils n'existent pas.
 
 Plusieurs routes sont disponibles:
 
--   POST /create : Ajoute un couple email lien dans la base de données et renvoie un lien de redirection. Le body doit contenir ```json
-    {
-    "email": "email",
-    "link": "link"
-    }
-
-```
+-   POST /create : Ajoute un couple email lien dans la base de données et renvoie un lien de redirection. Le body doit contenir
+    ```json
+        {
+        "email": "email",
+        "link": "link"
+        }
+    ```
 - GET /key/{key} : Redirige vers le lien défini par URL_REDIRECT dans les variables d'environnement. Si la clé n'existe pas, redirige quand même. Lors de l'utilisation de cette route la base de données est mise à jour pour stocker l'heure d'utilisation.
 
-
-
-```
